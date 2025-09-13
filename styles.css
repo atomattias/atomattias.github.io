@@ -421,6 +421,21 @@ section {
     font-weight: 500;
 }
 
+.project-image-screenshot {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.project-image-screenshot:hover {
+    transform: scale(1.02);
+    border-color: #2563eb;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
 
 /* Skills Section */
 .skills {
