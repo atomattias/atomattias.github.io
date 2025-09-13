@@ -36,10 +36,14 @@ Currently pursuing a Master's in Data Science at OsloMet, building upon a strong
 ## Work Experience
 
 ### Master's Student - Data Science
-**OsloMet (Oslo Metropolitan University)** | 2024 - Present
+**OsloMet (Oslo Metropolitan University)** | August 2025 - Present
 - Currently pursuing Master's in Data Science, focusing on machine learning, statistical analysis, and data-driven decision making
 - Building upon strong academic foundation in Computer Engineering and System Architecture to apply advanced AI/ML techniques
 - Strategic career progression toward specialized expertise in data science and artificial intelligence
+
+### Application Support Specialist
+**C-Loop** | Feb 2025 - Jun 2025
+- Testing of ERP systems and providing technical support for enterprise applications
 
 ### User Support Technician
 **Itec International Arora** | Sep 2022 - Feb 2025
