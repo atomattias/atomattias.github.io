@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mattias Gebrie - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2563eb;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header h2 {
+            color: #666;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .contact-info span {
+            color: #666;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            color: #2563eb;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .company {
+            color: #2563eb;
+            font-weight: bold;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .job-description {
+            margin-left: 20px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .skill-category h4 {
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-list li {
+            background: #f8fafc;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 3px solid #2563eb;
+        }
+        .education {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .degree {
+            font-weight: bold;
+        }
+        .university {
+            color: #2563eb;
+        }
+        @media print {
+            body {
+                font-size: 12px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mattias Gebrie</h1>
+        <h2>System Developer & Data Engineer</h2>
+        <div class="contact-info">
+            <span>📧 Available upon request</span>
+            <span>📱 Available upon request</span>
+            <span>🌐 Norway</span>
+            <span>💼 github.com/atomattias</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Summary</h3>
+        <p>Experienced system developer and data engineer with expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Strong academic background with two master's degrees and over 10 years of experience in developing effective solutions that improve system performance and data processing. Thrives in dynamic environments and seeks new challenges to contribute to innovation and growth.</p>
+    </div>
+
+    <div class="section">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Backend Technologies</h4>
+                <ul class="skill-list">
+                    <li>C#</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Spring Boot</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Frontend Technologies</h4>
+                <ul class="skill-list">
+                    <li>React</li>
+                    <li>React Native</li>
+                    <li>JavaScript</li>
+                    <li>Next.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Cloud & DevOps</h4>
+                <ul class="skill-list">
+                    <li>AWS</li>
+                    <li>Azure</li>
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Apache Spark</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Work Experience</h3>
+        
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Application Support Specialist</span> - 
+                    <span class="company">C-Loop</span>
+                </div>
+                <span class="date">Feb 2025 - Jun 2025</span>
+            </div>
+            <div class="job-description">
+                <p>Testing of ERP systems</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">User Support Technician</span> - 
+                    <span class="company">Itec International Arora</span>
+                </div>
+                <span class="date">Sep 2022 - Feb 2025</span>
+            </div>
+            <div class="job-description">
+                <p>Provided technical user support and troubleshooting</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Freelance Developer</span> - 
+                    <span class="company">Self-Employed</span>
+                </div>
+                <span class="date">Jul 2021 - Ongoing</span>
+            </div>
+            <div class="job-description">
+                <p>Developed a platform-independent mobile application. Led the entire development process with a focus on user-friendliness and user experience. Collaborated with UI/UX designers to implement features that improved customer satisfaction.</p>
+                <p><strong>Technologies:</strong> Spring Boot, React Native, Next.js</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Web Developer</span> - 
+                    <span class="company">School of Applied Technology (SALT)</span>
+                </div>
+                <span class="date">Aug 2022 - Dec 2022</span>
+            </div>
+            <div class="job-description">
+                <p>Developed a mobile application with React Native and .NET</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Data Engineer</span> - 
+                    <span class="company">Schibsted Data Foundation</span>
+                </div>
+                <span class="date">Jun 2021 - Aug 2021</span>
+            </div>
+            <div class="job-description">
+                <p>Built and administered a data pipeline for efficient extraction, transformation, and loading of data</p>
+                <p><strong>Technologies Used:</strong> AWS, React Library, Java, Scala, Git, Jenkins, Travis, Spinnaker</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">Backend Developer</span> - 
+                    <span class="company">Simula</span>
+                </div>
+                <span class="date">Jul 2019 - Sep 2019</span>
+            </div>
+            <div class="job-description">
+                <p>Improved mobile broadband reliability through multi-connection solutions. Developed algorithms with TensorFlow to optimize network performance.</p>
+                <p><strong>Technologies Used:</strong> Python, TensorFlow, Machine Learning algorithms</p>
+            </div>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <div>
+                    <span class="job-title">System Developer</span> - 
+                    <span class="company">Jimma University</span>
+                </div>
+                <span class="date">Nov 2007 - Sep 2012</span>
+            </div>
+            <div class="job-description">
+                <p>Developed Open source IP Telephony, Email server, and Active Directory system</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        <div class="education">
+            <div>
+                <span class="degree">MSc. Programming and System Architecture</span><br>
+                <span class="university">University of Oslo</span>
+            </div>
+            <span class="date">2018 - 2022</span>
+        </div>
+        <div class="education">
+            <div>
+                <span class="degree">MSc. in Computer Engineering</span><br>
+                <span class="university">Politecnico di Torino</span>
+            </div>
+            <span class="date">2012 - 2017</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Publications</h3>
+        <p><strong>M. T. Gebrie and H. Abie,</strong> "Risk-based adaptive authentication for internet of things in smart home eHealth," in Proceedings of the 11th European Conference on Software Architecture: Companion Proceedings, 2017, pp. 102-108: ACM.</p>
+    </div>
+</body>
+</html>
