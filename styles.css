@@ -421,36 +421,6 @@ section {
     font-weight: 500;
 }
 
-.screenshot-description {
-    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-    padding: 1.5rem;
-    border-radius: 10px;
-    border: 1px solid #e2e8f0;
-    transition: all 0.3s ease;
-}
-
-.screenshot-description:hover {
-    background: linear-gradient(135deg, #e2e8f0, #cbd5e1);
-    border-color: #94a3b8;
-}
-
-.screenshot-description h4 {
-    color: #1e293b;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-}
-
-.screenshot-description p {
-    color: #475569;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
-}
-
-.screenshot-description p:last-child {
-    margin-bottom: 0;
-}
 
 /* Skills Section */
 .skills {
