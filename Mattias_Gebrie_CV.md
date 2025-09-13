@@ -9,7 +9,7 @@
 
 ## Summary
 
-Currently pursuing a Master's in Data Science at OsloMet, building upon a strong academic foundation in Computer Engineering and System Architecture. With over 10 years of hands-on experience in system development and data engineering, I'm now specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.
+Currently pursuing a Master's in Data Science at OsloMet, building upon a strong academic foundation with two completed master's degrees in Computer Engineering and System Architecture. With over 10 years of hands-on experience in system development and data engineering, I'm now specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.
 
 ## Skills
 
