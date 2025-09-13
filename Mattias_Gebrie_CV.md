@@ -9,7 +9,7 @@
 
 ## Summary
 
-Experienced system developer and data engineer with expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Strong academic background with two master's degrees and over 10 years of experience in developing effective solutions that improve system performance and data processing. Thrives in dynamic environments and seeks new challenges to contribute to innovation and growth.
+Currently pursuing a Master's in Data Science at OsloMet, building upon over 10 years of experience in system development and data engineering. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying AI/ML techniques to solve real-world problems and extract meaningful insights from complex datasets.
 
 ## Skills
 
@@ -35,9 +35,10 @@ Experienced system developer and data engineer with expertise in backend develop
 
 ## Work Experience
 
-### Application Support Specialist
-**C-Loop** | Feb 2025 - Jun 2025
-- Testing of ERP systems
+### Master's Student - Data Science
+**OsloMet (Oslo Metropolitan University)** | 2024 - Present
+- Currently pursuing Master's in Data Science, focusing on machine learning, statistical analysis, and data-driven decision making
+- Building upon previous experience in system development and data engineering to apply advanced AI/ML techniques
 
 ### User Support Technician
 **Itec International Arora** | Sep 2022 - Feb 2025
