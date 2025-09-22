@@ -323,6 +323,8 @@ section {
     padding-bottom: 1rem;
     scrollbar-width: thin;
     scrollbar-color: #2563eb #e5e7eb;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .projects-scroll-container::-webkit-scrollbar {
@@ -350,12 +352,7 @@ section {
     min-width: max-content;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
+/* Removed projects-grid - using horizontal scroll instead */
 
 .project-card {
     background: white;
@@ -723,9 +720,7 @@ section {
         gap: 1rem;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+    /* Removed projects-grid responsive - using horizontal scroll */
 
     .projects-scroll {
         gap: 1rem;
