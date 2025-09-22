@@ -1,5 +1,7 @@
 # Mattias Gebrie - Curriculum Vitae
 
+**Data Science Student & Full Stack Developer**
+
 ## Contact Information
 - **Phone:** Available upon request
 - **Email:** Available upon request

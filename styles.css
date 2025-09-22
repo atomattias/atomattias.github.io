@@ -316,6 +316,13 @@ section {
 }
 
 /* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .projects-scroll-container {
     margin-top: 2rem;
     overflow-x: auto;
@@ -351,8 +358,6 @@ section {
     padding: 1rem 0;
     min-width: max-content;
 }
-
-/* Removed projects-grid - using horizontal scroll instead */
 
 .project-card {
     background: white;
@@ -719,8 +724,6 @@ section {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-
-    /* Removed projects-grid responsive - using horizontal scroll */
 
     .projects-scroll {
         gap: 1rem;
