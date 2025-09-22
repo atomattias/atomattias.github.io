@@ -351,10 +351,7 @@ section {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    display: none; /* Hide the old grid layout */
 }
 
 .project-card {
@@ -363,6 +360,8 @@ section {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    min-width: 350px;
+    flex-shrink: 0;
     border: 1px solid #e5e7eb;
 }
 
@@ -721,16 +720,12 @@ section {
         gap: 1rem;
     }
 
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
     .projects-scroll {
         gap: 1rem;
     }
 
     .project-card {
-        min-width: 300px;
+        min-width: 280px;
         flex-shrink: 0;
     }
 
