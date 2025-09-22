@@ -323,8 +323,6 @@ section {
     padding-bottom: 1rem;
     scrollbar-width: thin;
     scrollbar-color: #2563eb #e5e7eb;
-    width: 100%;
-    white-space: nowrap;
 }
 
 .projects-scroll-container::-webkit-scrollbar {
@@ -350,12 +348,13 @@ section {
     gap: 2rem;
     padding: 1rem 0;
     min-width: max-content;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .projects-grid {
-    display: none; /* Hide the old grid layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .project-card {
@@ -364,8 +363,6 @@ section {
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    min-width: 350px;
-    flex-shrink: 0;
     border: 1px solid #e5e7eb;
 }
 
@@ -724,12 +721,16 @@ section {
         gap: 1rem;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
     .projects-scroll {
         gap: 1rem;
     }
 
     .project-card {
-        min-width: 280px;
+        min-width: 300px;
         flex-shrink: 0;
     }
 
