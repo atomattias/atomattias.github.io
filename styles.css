@@ -316,6 +316,40 @@ section {
 }
 
 /* Projects Section */
+.projects-scroll-container {
+    margin-top: 2rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #2563eb #e5e7eb;
+}
+
+.projects-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-track {
+    background: #e5e7eb;
+    border-radius: 4px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 4px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;
+}
+
+.projects-scroll {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+    min-width: max-content;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -689,6 +723,15 @@ section {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-scroll {
+        gap: 1rem;
+    }
+
+    .project-card {
+        min-width: 300px;
+        flex-shrink: 0;
     }
 
     .skills-grid {
