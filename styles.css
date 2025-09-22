@@ -323,6 +323,8 @@ section {
     padding-bottom: 1rem;
     scrollbar-width: thin;
     scrollbar-color: #2563eb #e5e7eb;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .projects-scroll-container::-webkit-scrollbar {
@@ -348,6 +350,8 @@ section {
     gap: 2rem;
     padding: 1rem 0;
     min-width: max-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .projects-grid {
