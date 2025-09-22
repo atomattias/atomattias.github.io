@@ -364,6 +364,8 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid #e5e7eb;
+    flex: 0 0 350px;
+    max-width: 350px;
 }
 
 .project-card:hover {
@@ -730,8 +732,8 @@ section {
     }
 
     .project-card {
-        min-width: 300px;
-        flex-shrink: 0;
+        flex: 0 0 300px;
+        max-width: 300px;
     }
 
     .skills-grid {
