@@ -3,308 +3,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mattias Gebrie - Resume</title>
+    <title>Mattias Gebrie — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --ink: #1c1917;
+            --muted: #57534e;
+            --rule: #e7e5e4;
+            --accent: #1e3a5f;
+            --paper: #ffffff;
+            --subtle: #78716c;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
+            font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.45;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            padding: 2.5rem 1.75rem 3rem;
+            color: var(--ink);
+            background: var(--paper);
+            -webkit-font-smoothing: antialiased;
         }
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+
+        .doc-header {
+            margin-bottom: 1.75rem;
+            padding-bottom: 1.25rem;
+            border-bottom: 2px solid var(--accent);
         }
-        .header h1 {
-            color: #2563eb;
+
+        .doc-header h1 {
+            margin: 0 0 0.35rem;
+            font-size: 1.85rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: var(--ink);
+        }
+
+        .tagline {
+            margin: 0 0 1rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--muted);
+        }
+
+        .contact-bar {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 0.82rem;
+            color: var(--subtle);
+            line-height: 1.65;
         }
-        .header h2 {
-            color: #666;
-            margin: 10px 0;
-            font-weight: normal;
+
+        .contact-bar a {
+            color: var(--accent);
+            text-decoration: none;
         }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 15px;
+
+        .contact-bar a:hover {
+            text-decoration: underline;
         }
-        .contact-info span {
-            color: #666;
-        }
+
         .section {
-            margin-bottom: 30px;
+            margin-bottom: 1.5rem;
         }
-        .section h3 {
-            color: #2563eb;
-            border-bottom: 1px solid #e5e7eb;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+
+        .section:last-child {
+            margin-bottom: 0;
         }
-        .job {
-            margin-bottom: 20px;
+
+        .section-title {
+            margin: 0 0 0.65rem;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
         }
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 5px;
+
+        .summary-text {
+            margin: 0;
+            text-align: justify;
+            hyphens: auto;
+            color: var(--ink);
         }
-        .job-title {
-            font-weight: bold;
-            color: #333;
-        }
-        .company {
-            color: #2563eb;
-            font-weight: bold;
-        }
-        .date {
-            color: #666;
-            font-style: italic;
-        }
-        .job-description {
-            margin-left: 20px;
-        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 0.75rem 1.5rem;
         }
+
         .skill-category h4 {
-            color: #2563eb;
-            margin-bottom: 10px;
+            margin: 0 0 0.35rem;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--muted);
         }
+
         .skill-list {
-            list-style: none;
+            margin: 0;
             padding: 0;
+            list-style: none;
+            font-size: 0.88rem;
+            line-height: 1.5;
         }
+
         .skill-list li {
-            background: #f8fafc;
-            padding: 5px 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            border-left: 3px solid #2563eb;
+            position: relative;
+            padding-left: 0.65rem;
+            margin-bottom: 0.2rem;
         }
-        .education {
+
+        .skill-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: var(--accent);
+            opacity: 0.65;
+        }
+
+        .job {
+            margin-bottom: 1.15rem;
+            page-break-inside: avoid;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
+            align-items: flex-start;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.35rem;
         }
+
+        .job-heading {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .job-title {
+            display: block;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .job-org {
+            display: block;
+            font-weight: 500;
+            font-size: 0.88rem;
+            color: var(--accent);
+            margin-top: 0.1rem;
+        }
+
+        .date {
+            flex-shrink: 0;
+            font-size: 0.82rem;
+            font-weight: 500;
+            font-style: normal;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .job-description {
+            margin: 0;
+            padding-left: 0;
+        }
+
+        .job-description p {
+            margin: 0 0 0.4rem;
+            font-size: 0.88rem;
+            color: var(--ink);
+        }
+
+        .job-description p:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-description ul {
+            margin: 0.25rem 0 0;
+            padding-left: 1.15rem;
+        }
+
+        .job-description li {
+            margin-bottom: 0.25rem;
+            font-size: 0.88rem;
+            padding-left: 0.15rem;
+        }
+
+        .job-meta {
+            font-size: 0.82rem;
+            color: var(--muted);
+            margin-top: 0.35rem;
+        }
+
+        .job-meta strong {
+            font-weight: 600;
+            color: var(--subtle);
+        }
+
+        .education-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 0.5rem 1rem;
+            align-items: start;
+            padding: 0.65rem 0;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .education-row:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .education-row:first-of-type {
+            padding-top: 0;
+        }
+
         .degree {
-            font-weight: bold;
+            display: block;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: var(--ink);
         }
+
         .university {
-            color: #2563eb;
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--accent);
+            margin-top: 0.15rem;
         }
+
+        .education-row .date {
+            text-align: right;
+        }
+
+        .publication {
+            margin: 0;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .publication strong {
+            font-weight: 600;
+        }
+
         @media print {
             body {
-                font-size: 12px;
+                font-size: 10pt;
+                padding: 0.5in;
+                max-width: none;
             }
-            .header h1 {
-                font-size: 2em;
+
+            .contact-bar a {
+                color: var(--ink);
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .job {
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .education-row {
+                grid-template-columns: 1fr;
+            }
+
+            .education-row .date {
+                text-align: left;
             }
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <header class="doc-header">
         <h1>Mattias Gebrie</h1>
-        <h2>Data Science Student & Full Stack Developer</h2>
-        <div class="contact-info">
-            <span>📧 Available upon request</span>
-            <span>📱 Available upon request</span>
-            <span>🌐 Norway</span>
-            <span>💼 github.com/atomattias</span>
-        </div>
-    </div>
+        <p class="tagline">Data Science Student &amp; Full Stack Developer</p>
+        <p class="contact-bar">
+            Norway · Email available upon request · Phone available upon request ·
+            <a href="https://github.com/atomattias">github.com/atomattias</a> ·
+            <a href="https://www.linkedin.com/in/gmattias/">linkedin.com/in/gmattias</a>
+        </p>
+    </header>
 
-    <div class="section">
-        <h3>Summary</h3>
-        <p>Currently pursuing a Master's in Data Science at OsloMet, building upon a strong academic foundation with two completed master's degrees in Computer Engineering and System Architecture. With over 10 years of hands-on experience in system development and data engineering, I'm now specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.</p>
-    </div>
+    <section class="section" aria-labelledby="summary-heading">
+        <h2 id="summary-heading" class="section-title">Summary</h2>
+        <p class="summary-text">Currently pursuing a Master's in Data Science at OsloMet, building upon a strong academic foundation with two completed master's degrees in Computer Engineering and System Architecture. With over 10 years of hands-on experience in system development and data engineering, I'm now specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.</p>
+    </section>
 
-    <div class="section">
-        <h3>Skills</h3>
+    <section class="section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section-title">Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h4>Backend Technologies</h4>
+                <h4>Backend</h4>
                 <ul class="skill-list">
-                    <li>C#</li>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>C++</li>
+                    <li>C#, Java, Python, C++</li>
                     <li>Spring Boot</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Frontend Technologies</h4>
+                <h4>Frontend</h4>
                 <ul class="skill-list">
-                    <li>React</li>
-                    <li>React Native</li>
+                    <li>React, React Native, Next.js</li>
                     <li>JavaScript</li>
-                    <li>Next.js</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Cloud & DevOps</h4>
+                <h4>Cloud, data &amp; ops</h4>
                 <ul class="skill-list">
-                    <li>AWS</li>
-                    <li>Azure</li>
-                    <li>Docker</li>
-                    <li>Kubernetes</li>
-                    <li>Apache Spark</li>
+                    <li>AWS, Azure</li>
+                    <li>Docker, Kubernetes</li>
+                    <li>Apache Spark, Git</li>
                 </ul>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h3>Work Experience</h3>
-        
-        <div class="job">
+    <section class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Master's Student - Data Science</span> - 
-                    <span class="company">OsloMet (Oslo Metropolitan University)</span>
+                <div class="job-heading">
+                    <span class="job-title">Teaching Assistant</span>
+                    <span class="job-org">OsloMet (Oslo Metropolitan University)</span>
                 </div>
-                <span class="date">August 2025 - Present</span>
+                <span class="date">Feb 2026 – May 2026</span>
             </div>
             <div class="job-description">
-                <p>Currently pursuing Master's in Data Science, focusing on machine learning, statistical analysis, and data-driven decision making. Building upon strong academic foundation in Computer Engineering and System Architecture to apply advanced AI/ML techniques to real-world problems. This represents a strategic career progression toward specialized expertise in data science and artificial intelligence.</p>
+                <ul>
+                    <li>ACIT4830 — Machine Learning for Robotics and Automation</li>
+                    <li>ACIT4290 — Practical Cyber Security</li>
+                </ul>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Application Support Specialist</span> - 
-                    <span class="company">C-Loop</span>
+                <div class="job-heading">
+                    <span class="job-title">Application Support Specialist</span>
+                    <span class="job-org">C-Loop</span>
                 </div>
-                <span class="date">Feb 2025 - Jun 2025</span>
+                <span class="date">Feb 2025 – Jun 2025</span>
             </div>
             <div class="job-description">
-                <p>Testing of ERP systems and providing technical support for enterprise applications.</p>
+                <p>ERP testing and technical support for enterprise applications.</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">User Support Technician</span> - 
-                    <span class="company">Itec International Arora</span>
+                <div class="job-heading">
+                    <span class="job-title">User Support Technician</span>
+                    <span class="job-org">Itec International Arora</span>
                 </div>
-                <span class="date">Sep 2022 - Feb 2025</span>
+                <span class="date">Sep 2022 – Feb 2025</span>
             </div>
             <div class="job-description">
-                <p>Provided technical user support and troubleshooting</p>
+                <p>Technical user support and troubleshooting.</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Freelance Developer</span> - 
-                    <span class="company">Self-Employed</span>
+                <div class="job-heading">
+                    <span class="job-title">Freelance Developer</span>
+                    <span class="job-org">Self-employed</span>
                 </div>
-                <span class="date">Jul 2021 - Ongoing</span>
+                <span class="date">Jul 2021 – Present</span>
             </div>
             <div class="job-description">
-                <p>Developed a platform-independent mobile application. Led the entire development process with a focus on user-friendliness and user experience. Collaborated with UI/UX designers to implement features that improved customer satisfaction.</p>
-                <p><strong>Technologies:</strong> Spring Boot, React Native, Next.js</p>
+                <p>Built a cross-platform mobile application; owned delivery end-to-end with emphasis on usability and UX. Partnered with designers to ship features that improved satisfaction.</p>
+                <p class="job-meta"><strong>Stack:</strong> Spring Boot, React Native, Next.js</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Web Developer</span> - 
-                    <span class="company">School of Applied Technology (SALT)</span>
+                <div class="job-heading">
+                    <span class="job-title">Web Developer</span>
+                    <span class="job-org">School of Applied Technology (SALT)</span>
                 </div>
-                <span class="date">Aug 2022 - Dec 2022</span>
+                <span class="date">Aug 2022 – Dec 2022</span>
             </div>
             <div class="job-description">
-                <p>Developed a mobile application with React Native and .NET</p>
+                <p>Mobile application development with React Native and .NET.</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Data Engineer</span> - 
-                    <span class="company">Schibsted Data Foundation</span>
+                <div class="job-heading">
+                    <span class="job-title">Data Engineer</span>
+                    <span class="job-org">Schibsted Data Foundation</span>
                 </div>
-                <span class="date">Jun 2021 - Aug 2021</span>
+                <span class="date">Jun 2021 – Aug 2021</span>
             </div>
             <div class="job-description">
-                <p>Built and administered a data pipeline for efficient extraction, transformation, and loading of data</p>
-                <p><strong>Technologies Used:</strong> AWS, React Library, Java, Scala, Git, Jenkins, Travis, Spinnaker</p>
+                <p>Built and operated ETL-oriented data pipelines.</p>
+                <p class="job-meta"><strong>Stack:</strong> AWS, React Library, Java, Scala, Git, Jenkins, Travis, Spinnaker</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">Backend Developer</span> - 
-                    <span class="company">Simula</span>
+                <div class="job-heading">
+                    <span class="job-title">Backend Developer</span>
+                    <span class="job-org">Simula</span>
                 </div>
-                <span class="date">Jul 2019 - Sep 2019</span>
+                <span class="date">Jul 2019 – Sep 2019</span>
             </div>
             <div class="job-description">
-                <p>Improved mobile broadband reliability through multi-connection solutions. Developed algorithms with TensorFlow to optimize network performance.</p>
-                <p><strong>Technologies Used:</strong> Python, TensorFlow, Machine Learning algorithms</p>
+                <p>Improved mobile broadband reliability via multi-connection approaches; developed TensorFlow-based algorithms for network performance.</p>
+                <p class="job-meta"><strong>Stack:</strong> Python, TensorFlow</p>
             </div>
-        </div>
+        </article>
 
-        <div class="job">
+        <article class="job">
             <div class="job-header">
-                <div>
-                    <span class="job-title">System Developer</span> - 
-                    <span class="company">Jimma University</span>
+                <div class="job-heading">
+                    <span class="job-title">System Developer</span>
+                    <span class="job-org">Jimma University</span>
                 </div>
-                <span class="date">Nov 2007 - Sep 2012</span>
+                <span class="date">Nov 2007 – Sep 2012</span>
             </div>
             <div class="job-description">
-                <p>Developed Open source IP Telephony, Email server, and Active Directory system</p>
+                <p>Delivered open-source IP telephony, mail server, and Active Directory infrastructure.</p>
             </div>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <div class="section">
-        <h3>Education</h3>
-        <div class="education">
+    <section class="section" aria-labelledby="education-heading">
+        <h2 id="education-heading" class="section-title">Education</h2>
+        <div class="education-row">
             <div>
-                <span class="degree">MSc. Data Science (In Progress)</span><br>
+                <span class="degree">MSc Data Science (in progress)</span>
                 <span class="university">OsloMet (Oslo Metropolitan University)</span>
             </div>
-            <span class="date">2024 - Present</span>
+            <span class="date">2025 – Present</span>
         </div>
-        <div class="education">
+        <div class="education-row">
             <div>
-                <span class="degree">MSc. Programming and System Architecture</span><br>
+                <span class="degree">MSc Programming and System Architecture</span>
                 <span class="university">University of Oslo</span>
             </div>
-            <span class="date">2018 - 2022</span>
+            <span class="date">2018 – 2022</span>
         </div>
-        <div class="education">
+        <div class="education-row">
             <div>
-                <span class="degree">MSc. in Computer Engineering</span><br>
+                <span class="degree">MSc Computer Engineering</span>
                 <span class="university">Politecnico di Torino</span>
             </div>
-            <span class="date">2012 - 2017</span>
+            <span class="date">2012 – 2017</span>
         </div>
-    </div>
+    </section>
 
-    <div class="section">
-        <h3>Publications</h3>
-        <p><strong>M. T. Gebrie and H. Abie,</strong> "Risk-based adaptive authentication for internet of things in smart home eHealth," in Proceedings of the 11th European Conference on Software Architecture: Companion Proceedings, 2017, pp. 102-108: ACM.</p>
-    </div>
+    <section class="section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading" class="section-title">Publications</h2>
+        <p class="publication"><strong>M. T. Gebrie and H. Abie,</strong> &ldquo;Risk-based adaptive authentication for internet of things in smart home eHealth,&rdquo; in <em>Proceedings of the 11th European Conference on Software Architecture: Companion Proceedings,</em> 2017, pp. 102–108. ACM.</p>
+    </section>
 </body>
 </html>
