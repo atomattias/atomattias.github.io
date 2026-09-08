@@ -9,7 +9,7 @@ GitHub: [github.com/atomattias](https://github.com/atomattias) · LinkedIn: [lin
 
 ## Summary
 
-Currently pursuing a Master's in Data Science at OsloMet, building upon a strong academic foundation with two completed master's degrees in Computer Engineering and System Architecture. With over 10 years of hands-on experience in system development and data engineering, I'm now specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.
+Currently pursuing a Master's in Data Science at OsloMet, building upon an MSc in Computer Engineering. With hands-on experience in system development and data engineering, I'm specializing in AI/ML techniques and data science methodologies. Expertise in backend development (C#, Java, Python, C++), cloud technology (AWS, Azure), and big data processing (Apache Spark). Published researcher with hands-on experience in machine learning, TensorFlow, and IoT security. Passionate about applying advanced analytics to solve real-world problems and extract meaningful insights from complex datasets.
 
 ---
 
@@ -87,14 +87,23 @@ Currently pursuing a Master's in Data Science at OsloMet, building upon a strong
 | Degree | Institution | Dates |
 |--------|-------------|--------|
 | MSc Data Science *(in progress)* | OsloMet (Oslo Metropolitan University) | 2025 – Present |
-| MSc Programming and System Architecture | University of Oslo | 2018 – 2022 |
 | MSc Computer Engineering | Politecnico di Torino | 2012 – 2017 |
 
 ---
 
 ## Publications
 
+P. Yeng, A. M. Haidar, L. Nweke, M. T. Gebrie, and M. Elhadef, “Evaluating Classical and Deep Learning Approaches for Improving Honeypot-Informed Network Intrusion Detection,” in *Proceedings of the International Conference on Integrated Intelligence and Cognitive Engineering (ICIICE 2026)*, Dubai, UAE, Apr. 2026. Oral presentation.
+
 M. T. Gebrie and H. Abie, “Risk-based adaptive authentication for internet of things in smart home eHealth,” in *Proceedings of the 11th European Conference on Software Architecture: Companion Proceedings*, 2017, pp. 102–108. ACM.
+
+**Manuscripts under review and revision**
+
+P. K. Yeng, M. Elhadad, M. T. Gebrie, L. O. Nweke, and J.-B. Diekuu, “TrustFed-Honeypot: Multi-Signal Trust-Aware Federated Intrusion Detection,” under review, 2026.
+
+P. K. Yeng, M. Elhadad, M. T. Gebrie, L. O. Nweke, and J.-B. Diekuu, “TrustFed-RL: Governance-Aware Multi-Signal Federated Reinforcement Learning for Secure IoMT Systems,” submitted to *IEEE Internet of Things Journal*, under review, 2026.
+
+M. T. Gebrie et al., “Particulate Matter (PM2.5) Exposure, Harmattan Effects and Forecasting in Industrial Coastal Communities of Ghana: Implications for Air Quality Management and Public Health,” under revision, 2026.
 
 ---
 
